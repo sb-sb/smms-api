@@ -1,7 +1,7 @@
 define({ "api": [
   {
     "type": "post",
-    "url": "/api/v2/albums",
+    "url": "/albums",
     "title": "Create Album",
     "name": "Create_Albums",
     "group": "Album",
@@ -134,7 +134,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/v2/albums/:album_id/delete",
+    "url": "/albums/:album_id/delete",
     "title": "Album Deletion",
     "name": "Delete_Album",
     "group": "Album",
@@ -198,7 +198,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/v2/albums/:album_id/item",
+    "url": "/albums/:album_id/item",
     "title": "Add/Remove item to Album",
     "name": "Edit_Album_Item",
     "group": "Album",
@@ -282,7 +282,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/v2/albums/:album_id",
+    "url": "/albums/:album_id",
     "title": "Get All Album Items",
     "name": "Get_Album_Items",
     "group": "Album",
@@ -353,7 +353,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/v2/albums",
+    "url": "/albums",
     "title": "Get All Albums",
     "name": "Get_Albums",
     "group": "Album",
@@ -477,7 +477,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/v2/clear",
+    "url": "/clear",
     "title": "Clear IP Based Temporary Upload History",
     "name": "Clear_Temporary_History",
     "group": "Image",
@@ -534,7 +534,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/v2/delete/:hash",
+    "url": "/delete/:hash",
     "title": "Image Deletion",
     "name": "Deletion",
     "group": "Image",
@@ -598,7 +598,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/v2/history",
+    "url": "/history",
     "title": "IP Based Temporary Upload History",
     "name": "Temporary_History",
     "group": "Image",
@@ -732,7 +732,7 @@ define({ "api": [
   },
   {
     "type": "post",
-    "url": "/api/v2/upload",
+    "url": "/upload",
     "title": "Upload Image",
     "name": "Upload",
     "group": "Image",
@@ -901,7 +901,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/v2/upload_history",
+    "url": "/upload_history",
     "title": "Upload History",
     "name": "Upload_History",
     "group": "Image",
@@ -1070,7 +1070,7 @@ define({ "api": [
   },
   {
     "type": "post",
-    "url": "/api/v2/profile",
+    "url": "/profile",
     "title": "Get User Profile",
     "name": "Get_Profile",
     "group": "User",
@@ -1212,7 +1212,7 @@ define({ "api": [
   },
   {
     "type": "post",
-    "url": "/api/v2/token",
+    "url": "/token",
     "title": "Get API-Token",
     "name": "Get_Token",
     "group": "User",
