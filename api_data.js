@@ -926,26 +926,6 @@ define({ "api": [
         ]
       }
     },
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "file",
-            "optional": false,
-            "field": "smfile",
-            "description": ""
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "format",
-            "description": "<p>Return Type: <code>json, xml. Default json</code></p>"
-          }
-        ]
-      }
-    },
     "success": {
       "fields": {
         "Success 200": [
@@ -1030,6 +1010,13 @@ define({ "api": [
             "group": "Success 200",
             "type": "String",
             "optional": false,
+            "field": "data.created_at",
+            "description": "<p>Image Uplead timestamp.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
             "field": "data.url",
             "description": "<p>Image URL.</p>"
           },
@@ -1059,7 +1046,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n  \"success\": true,\n  \"code\": \"success\",\n  \"message\": \"Upload success.\",\n  \"data\": [\n      {\n        \"file_id\": 0,\n        \"width\": 4677,\n        \"height\": 3307,\n        \"filename\": \"luo.jpg\",\n        \"storename\": \"D5VpWCKFElUsPcR.jpg\",\n        \"size\": 801933,\n        \"path\": \"/2019/12/16/D5VpWCKFElUsPcR.jpg\",\n        \"hash\": \"Q6vLIbCGZojrMhO2e7BmgFuXRV\",\n        \"url\": \"https://vip1.loli.net/2019/12/16/D5VpWCKFElUsPcR.jpg\",\n        \"delete\": \"https://sm.ms/delete/Q6vLIbCGZojrMhO2e7BmgFuXRV\",\n        \"page\": \"https://sm.ms/image/D5VpWCKFElUsPcR\"\n      }\n  ],\n  \"RequestId\": \"8A84DDCA-96B3-4363-B5DF-524E95A5201A\"\n}",
+          "content": "{\n  \"success\": true,\n  \"code\": \"success\",\n  \"message\": \"Get list success.\",\n  \"data\": [\n      {\n        \"file_id\": 0,\n        \"width\": 4677,\n        \"height\": 3307,\n        \"filename\": \"luo.jpg\",\n        \"storename\": \"D5VpWCKFElUsPcR.jpg\",\n        \"size\": 801933,\n        \"path\": \"/2019/12/16/D5VpWCKFElUsPcR.jpg\",\n        \"hash\": \"Q6vLIbCGZojrMhO2e7BmgFuXRV\",\n        \"created_at\": 1564844329,\n        \"url\": \"https://i.loli.net/2019/12/16/D5VpWCKFElUsPcR.jpg\",\n        \"delete\": \"https://sm.ms/delete/Q6vLIbCGZojrMhO2e7BmgFuXRV\",\n        \"page\": \"https://sm.ms/image/D5VpWCKFElUsPcR\"\n      }\n  ],\n  \"RequestId\": \"8A84DDCA-96B3-4363-B5DF-524E95A5201A\"\n}",
           "type": "json"
         }
       ]
