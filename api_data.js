@@ -1011,7 +1011,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "data.created_at",
-            "description": "<p>Image Uplead timestamp.</p>"
+            "description": "<p>Image upload timestamp.</p>"
           },
           {
             "group": "Success 200",
