@@ -46,14 +46,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -159,14 +159,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -243,14 +243,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -307,14 +307,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -378,14 +378,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -489,7 +489,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "format",
-            "description": "<p>Return Type: <code>json, xml. Default json</code></p>"
+            "description": "<p>Return Type: <code>json</code> or <code>xml</code>, the default value is <code>json</code></p>"
           }
         ]
       }
@@ -502,14 +502,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -526,7 +526,14 @@ define({ "api": [
             "description": "<p>Request ID.</p>"
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"success\": true,\n    \"code\": \"success\",\n    \"message\": \"Clear list success.\",\n    \"data\": [],\n    \"RequestId\": \"5E29C689-D3C2-4D1C-9313-1AB7D5F9E264\"\n}",
+          "type": "json"
+        }
+      ]
     },
     "version": "0.0.0",
     "filename": "./image.py",
@@ -553,7 +560,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "format",
-            "description": "<p>Return Type: <code>json, xml. Default json</code></p>"
+            "description": "<p>Return Type: <code>json</code> or <code>xml</code>, the default value is <code>json</code></p>"
           }
         ]
       }
@@ -566,14 +573,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -610,7 +617,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "format",
-            "description": "<p>Return Type: <code>json, xml. Default json</code></p>"
+            "description": "<p>Return Type: <code>json</code> or <code>xml</code>, the default value is <code>json</code></p>"
           }
         ]
       }
@@ -623,14 +630,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -644,7 +651,7 @@ define({ "api": [
             "type": "Object[]",
             "optional": false,
             "field": "data",
-            "description": "<p>data.</p>"
+            "description": "<p>data Object.</p>"
           },
           {
             "group": "Success 200",
@@ -772,7 +779,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "format",
-            "description": "<p>Return Type: <code>json, xml. Default json</code></p>"
+            "description": "<p>Return Type: <code>json</code> or <code>xml</code>, the default value is <code>json</code></p>"
           }
         ]
       }
@@ -785,14 +792,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -934,14 +941,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -955,7 +962,7 @@ define({ "api": [
             "type": "Object[]",
             "optional": false,
             "field": "data",
-            "description": "<p>data.</p>"
+            "description": "<p>data Object.</p>"
           },
           {
             "group": "Success 200",
@@ -1090,14 +1097,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -1231,14 +1238,14 @@ define({ "api": [
             "type": "Boolean",
             "optional": false,
             "field": "success",
-            "description": "<p>Request Status.</p>"
+            "description": "<p>Request status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "code",
-            "description": "<p>Request Status Code.</p>"
+            "description": "<p>Request status code.</p>"
           },
           {
             "group": "Success 200",
@@ -1269,7 +1276,14 @@ define({ "api": [
             "description": "<p>Request ID.</p>"
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"success\": true,\n    \"code\": \"success\",\n    \"message\": \"Get API token success.\",\n    \"data\": {\n        \"token\": \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"\n    },\n    \"RequestId\": \"8DCED45B-5E9F-43B1-90C6-29D562F250D5\"\n}",
+          "type": "json"
+        }
+      ]
     },
     "version": "0.0.0",
     "filename": "./user.py",
