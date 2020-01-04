@@ -466,17 +466,6 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "Auth",
-    "title": "",
-    "name": "Auth",
-    "group": "Auth",
-    "description": "<p>Authenticate requests by setting the Authorization header with a valid API key.</p> <p>We accept just the API key:</p> <pre class=\"prettyprint\"> \"Authorization\": \"14ac5499cfdd2bb2859e4476d2e5b1d2bad079bf\" </code></pre> <p>or Basic type and the API key:</p> <pre class=\"prettyprint\">\"Authorization\": \"Basic 14ac5499cfdd2bb2859e4476d2e5b1d2bad079bf\" </code></pre> <p>Make sure you've stored your API key somewhere secure and never share them publicly.</p>",
-    "version": "0.0.0",
-    "filename": "./auth.py",
-    "groupTitle": "Auth"
-  },
-  {
-    "type": "get",
     "url": "/clear",
     "title": "Clear IP Based Temporary Upload History",
     "name": "Clear_Temporary_History",
